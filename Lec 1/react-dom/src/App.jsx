@@ -14,14 +14,15 @@ import Greeting2 from './components/Greeting2'
 import StyleCard from './components/StyleCard'
 import ProfileCard from './components/ProfileCard'
 import IconComponents from './components/IconComponents'
+import Counter from './components/Counter'
+import TodoList from './components/TodoList'
+import Profile from './components/Profile'
 
 
 const App = () => {
   return (
-    <div className='flex justify-evenly'>
-      <StyleCard/>
-      <ProfileCard/>
-      <IconComponents/>
+    <div className=''>
+      <Profile/>
     </div>
   )
 }
