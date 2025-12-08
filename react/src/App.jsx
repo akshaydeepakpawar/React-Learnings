@@ -18,29 +18,14 @@ import Counter from './components/Counter'
 import TodoList from './components/TodoList'
 import Profile from './components/Profile'
 import ShoppingList from './components/ShoppingList'
+import BesicEffect from './components/BesicEffect'
+import ApicalluseEffect from './components/ApicalluseEffect'
 
 
 const App = () => {
- 
-  const [data,setData]=useState([]);
-
-  //this callback function runs only once
-  useEffect(()=>{
-   const fetchData =async()=>{
-      const data= await fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json())
-      if(data && data.length)
-        setData(data);
-    }
-    fetchData();
-  },[])
-
   return (
     <div className=''>
-      <ul>
-        {data.map((user)=>{
-          return <li key={user.id}>{user.name}</li>
-        })}
-      </ul>
+      <ApicalluseEffect/>
     </div>
   )
 }
