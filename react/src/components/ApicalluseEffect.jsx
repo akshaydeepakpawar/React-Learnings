@@ -25,7 +25,7 @@ const ApicalluseEffect = () => {
       </ul> */}
 
       {/* fetch first data  */}
-      <h1>{data.length > 0 && data[0].name }</h1>
+      <h1 className='text-3xl font-bold'>{data.length > 0 ? data[0].name : <p>loading...</p>}</h1>
     </div>
   )
 }

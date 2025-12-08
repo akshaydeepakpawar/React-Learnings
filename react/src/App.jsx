@@ -20,13 +20,20 @@ import Profile from './components/Profile'
 import ShoppingList from './components/ShoppingList'
 import BesicEffect from './components/BesicEffect'
 import ApicalluseEffect from './components/ApicalluseEffect'
+import { UserProvider } from './components/UserContext'
+import UserProfile from './components/UserProfile'
+import UpdateUser from './components/UpdateUser'
 
 
 const App = () => {
   return (
-    <div className=''>
-      <ApicalluseEffect/>
-    </div>
+    // <div className=''>
+
+    // </div>
+    <UserProvider>
+      <UserProfile/>
+      <UpdateUser/>
+    </UserProvider>
   )
 }
 
