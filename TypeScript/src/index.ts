@@ -242,3 +242,18 @@ myNewCar.start()
 myNewCar.stop()
 console.log(myNewCar.brand);
 console.log(myNewCar.model);
+
+
+// ---------------------------
+
+// generic function 
+
+function uniqueDataTypesFunc<Type>(items:Type,defaultValue:Type):[Type,Type]{
+    return [items,defaultValue]
+}
+
+const num=uniqueDataTypesFunc<number>(10,20);
+const str=uniqueDataTypesFunc<string>("hello","world")
+
+console.log(num);
+console.log(str);
